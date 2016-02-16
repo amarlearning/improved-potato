@@ -56,10 +56,19 @@ Copyright (c) 2015 Amar Prakash Pandey
 (http://www.amarpandey.ml/)
 All Rights Reserved.
 */
-
+// "New Notifications!";
+// "Simple Desktop Notification by Amar Prakash Pandey!";
 var dntrigger = document.getElementById('dntrigger');
-var titletext = "New Notifications!";
-var bodytext = "Simple Desktop Notification by Amar Prakash Pandey!";
+var titletext = document.getElementById('titletext');
+var bodytext = document.getElementById('bodytext');
+if(titletext === "")
+{
+  titletext = "New Notifications!";
+}
+if(bodytext === "")
+{
+  bodytext = "Simple Desktop Notification by Amar Prakash Pandey!";
+}
 var iconurl = 'https://www.approveme.me/wp-content/uploads/edd/2014/07/document-activity-notifications.png';
 dntrigger.addEventListener('click', function(e) {
       e.preventDefault();
