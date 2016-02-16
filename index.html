@@ -50,6 +50,43 @@
       </footer>
     </div>
     <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
+    <script>
+      /*
+Copyright (c) 2015 Amar Prakash Pandey
+(http://www.amarpandey.ml/)
+All Rights Reserved.
+*/
+
+var dntrigger = document.getElementById('dntrigger');
+var titletext = "New Notifications!";
+var bodytext = "Simple Desktop Notification by Amar Prakash Pandey!";
+var iconurl = 'https://www.approveme.me/wp-content/uploads/edd/2014/07/document-activity-notifications.png';
+dntrigger.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      if (!window.Notification) {
+            alert("Sorry, Notification Not supported in this Browser!");
+      } else {
+            if (Notification.permission === 'default') {
+                  Notification.requestPermission(function(p) {
+                        if (p === 'denied')
+                              alert('You have denied Notification from Team Abhivyakti');
+                        else {
+                              notify = new Notification(titletext, {
+                                    body: bodytext,
+                                    icon: iconurl
+                              });
+                        }
+                  });
+            } else {
+                  notify = new Notification(titletext, {
+                        body: bodytext,
+                        icon: iconurl
+                        // You Can give image Link to change notification Icon.
+                  });
+            }
+      }
+});
+    </script>
   </body>
 </html>
