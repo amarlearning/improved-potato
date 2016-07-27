@@ -1,6 +1,6 @@
 /*
 Copyright (c) 2015 Amar Prakash Pandey
-(http://www.amarpandey.ml/)
+(http://www.amarpandey.me/)
 All Rights Reserved.
 */
 
@@ -19,14 +19,14 @@ dntrigger.addEventListener('click', function(e) {
                         else {
                               notify = new Notification('New Notifications!', {
                                     body: 'Simple Desktop Notification by Amar Prakash Pandey!"',
-                                    icon: 'http://urls.ml/5yc3a'
+                                    icon: 'https://www.approveme.com/wp-content/uploads/edd/2014/07/document-activity-notifications.png'
                               });
                         }
                   });
             } else {
                   notify = new Notification('New Notifications!', {
                         body: 'Simple Desktop Notification by Amar Prakash Pandey!"',
-                        icon: 'http://urls.ml/5yc3a'
+                        icon: 'https://www.approveme.com/wp-content/uploads/edd/2014/07/document-activity-notifications.png'
                         // You Can give image Link to change notification Icon.
                   });
             }
