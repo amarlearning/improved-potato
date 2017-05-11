@@ -1,10 +1,9 @@
-Desktop Notifications Using Javascript
-======================================
+# Desktop Notifications Using Javascript
 
-Want to see a live 
+### Want to see a live 
 [Demo](http://amarlearning.github.io/improved-potato) !
 
-ScreenShots
+### ScreenShots
 ==========
 
 ![Desktop Notification](https://raw.githubusercontent.com/amarlearning/improved-potato/master/screenshots/img.jpg)
