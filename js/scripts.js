@@ -15,7 +15,7 @@ dntrigger.addEventListener('click', function(e) {
             if (Notification.permission === 'default') {
                   Notification.requestPermission(function(p) {
                         if (p === 'denied')
-                              alert('You have denied Notification from Team Abhivyakti');
+                              alert('You have denied Notifications!');
                         else {
                               notify = new Notification('New Notifications!', {
                                     body: 'Simple Desktop Notification by Amar Prakash Pandey!"',
